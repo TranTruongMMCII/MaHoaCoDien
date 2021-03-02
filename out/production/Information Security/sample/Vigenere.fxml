@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.Vigenere"
+            prefHeight="400.0" prefWidth="600.0"
+fx:id="Vigenere">
+
+    <children>
+        <JFXTextField alignment="CENTER" editable="false" layoutX="281.0" layoutY="26.0" text="Mã hóa Vingenere">
+            <font>
+                <Font name="System Bold" size="24.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField fx:id="txtPlainText" labelFloat="true" layoutX="12.0" layoutY="121.0" prefHeight="31.0" prefWidth="824.0" promptText="Nhập vào chuỗi:" text="plain text" />
+        <JFXTextField fx:id="txtKey" labelFloat="true" layoutX="14.0" layoutY="186.0" prefHeight="31.0" prefWidth="824.0" promptText="Nhập vào khóa:" text="key" />
+        <Button fx:id="btnMaHoa" layoutX="100.0" layoutY="253.0" mnemonicParsing="false" onAction="#maHoa" stylesheets="@style.css" text="Mã hóa" />
+        <Button fx:id="btnLuuFile" layoutX="629.0" layoutY="253.0" mnemonicParsing="false" onAction="#luuFile" stylesheets="@style.css" text="Lưu file" />
+        <JFXTextField fx:id="txtCipherText" labelFloat="true" layoutX="12.0" layoutY="317.0" prefHeight="31.0" prefWidth="824.0" promptText="Chuỗi mã hóa:" text="cipher text" />
+        <Button fx:id="btnGiaiMa" layoutX="100.0" layoutY="398.0" mnemonicParsing="false" onAction="#giaiMa" stylesheets="@style.css" text="Giải mã" />
+        <Button fx:id="btnMoFile" layoutX="629.0" layoutY="398.0" mnemonicParsing="false" onAction="#moFile" stylesheets="@style.css" text="Mở file" />
+    </children>
+
+</AnchorPane>
